@@ -1,0 +1,28 @@
+.navbar {
+    background-color: white;
+    border-bottom: 0.5px solid rgb(70, 70, 70);
+    padding: 10px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+line {
+    stroke: black;
+    stroke-width: 1;
+    stroke-linecap: round;
+}
