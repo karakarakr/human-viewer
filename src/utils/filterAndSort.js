@@ -63,12 +63,19 @@ export function filterAndSortUsers(users, filters, sortType) {
       case 'name-desc':
         filtered.sort((a, b) => b.name.first.localeCompare(a.name.first));
         break;
-      case 'age':
+      case 'age-asc':
         filtered.sort((a, b) => a.dob.age - b.dob.age);
         break;
-      case 'registered':
+      case 'age-desc':
+        filtered.sort((a, b) => b.dob.age - a.dob.age);
+        break;
+      case 'registered-asc':
         filtered.sort(
           (a, b) => new Date(a.registered.date) - new Date(b.registered.date)
+        );
+      case 'registered-asc':
+        filtered.sort(
+          (a, b) => new Date(b.registered.date) - new Date(a.registered.date)
         );
         break;
       default:
